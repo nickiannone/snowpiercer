@@ -30,20 +30,27 @@ rails server
 
 ## Database creation
 
-To set up the initial database, run:
+To create the database, run:
 
 ```
 rails db:create
-rails db:migrate
 ```
 
 ## Database initialization
 
-TODO
+To set up the database or perform any missed migrations, run:
+
+```
+rails db:migrate
+```
 
 ## How to run the test suite
 
-TODO
+To run the test suite for the Rails API service, run:
+
+```
+rails test
+```
 
 ## Application Design
 
