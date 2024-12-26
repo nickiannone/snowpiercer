@@ -22,6 +22,10 @@ The database will be largely operational and authorizational information for aut
 
 We will have several smaller microservices to handle things outside of the scope of the main Rails application.
 
+### Mapmaker
+
+This component pulls in and updates base street data for the 
+
 ### Search
 
 We want to have Elasticsearch available on the actual data for analytical purposes, so the actual records can be indexed without the rest of the system taking a performance hit.
@@ -48,3 +52,41 @@ We expect to be able to know or extrapolate the following:
     - Tags
     - Confidence
     - Nearby data points (basis for calculation)
+
+## Data Model
+
+User
+Session
+Jurisdiction
+    Roadway
+        Lane
+            Span
+Truck
+GPSPosition
+NWISDataPoint
+
+## Other Research
+
+Google Maps Overlay:
+- Map
+- Marker (can animate, use custom icon, etc.)
+- Polyline/Polygon (path, stroke color, stroke opacity, stroke weig)
+- Circle
+- Rectangle
+- Info Window
+- Custom Overlays
+
+## Original Stories
+
+1. [datalake] Create model for a Truck
+2. [datalake] Create model for a Jurisdiction
+3. [datalake] Create model for a Roadway
+4. [datalake] Create model for a Lane
+5. [datalake] Create model for a Span
+6. [datalake] Create model for a Video
+7. [datalake] Create model for a GPSPosition
+8. [datalake] Create model for a NWISDataPoint
+9. [datalake] Create model for a GeoTag
+10. [datalake] Create model for a User
+11. [datalake/accumulator] Fetch GPS information for Jurisdiction from Google Maps
+12. [datalake/accumulator] Store GPS information into data lake models
