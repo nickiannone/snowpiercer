@@ -63,7 +63,8 @@ Jurisdiction
             Span
 Truck
 GPSPosition
-NWISDataPoint
+WeatherDataPoint (NWIS?)
+GeoTag
 
 ## Other Research
 
@@ -85,8 +86,20 @@ Google Maps Overlay:
 5. [datalake] Create model for a Span
 6. [datalake] Create model for a Video
 7. [datalake] Create model for a GPSPosition
-8. [datalake] Create model for a NWISDataPoint
+8. [datalake] Create model for a WeatherDataPoint (NWIS?)
 9. [datalake] Create model for a GeoTag
 10. [datalake] Create model for a User
-11. [datalake/accumulator] Fetch GPS information for Jurisdiction from Google Maps
-12. [datalake/accumulator] Store GPS information into data lake models
+11. [datalake/accumulator] Receive Map information for Jurisdiction from Google Maps
+12. [datalake/accumulator] Store Map information into data lake
+13. [datalake/accumulator] Receive Weather information for Jurisdiction from Weather.gov (https://api.weather.gov/openapi.json) and store in Data Lake
+    https://www.reddit.com/r/learnpython/comments/15zm4pq/best_weather_api/ 
+14. [datalake/accumulator] Receive Onboard Conditions for Truck and store in data lake
+15. [onboard] Send Onboard Conditions to Accumulator
+16. [onboard] Measure some onboard conditions (Temperature?)
+17. [onboard] Capture current GPS position
+18. [onboard] Request truck registration from API
+19. [api] Add Authentication for API requests
+20. [api] Add endpoints for Truck registration
+21. [api] Add endpoints for Truck start-capture and stop-capture
+22. [onboard] Add commands to start and stop data capture
+23. 
