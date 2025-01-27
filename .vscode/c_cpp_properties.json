@@ -1,0 +1,58 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/onboard",
+                    "C:/Users/Nick/AppData/Local/Arduino15/staging/**",
+                    "C:/Users/Nick/OneDrive/Documents/Arduino/libraries/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}/onboard",
+                "C:/Users/Nick/AppData/Local/Arduino15/staging",
+                "C:/Users/Nick/OneDrive/Documents/Arduino/libraries",
+                "C:/Program Files (x86)/Arduino/tools/**",
+                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/**",
+                "C:/Program Files (x86)/Arduino/hardware/tools/avr/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe"
+        },
+        {
+            "name": "Arduino",
+            "browse": {
+                "path": [
+                    "C:/Users/Nick/OneDrive/Documents/Arduino/libraries/**"
+                ]
+            },
+            "includePath": [
+                "${workspaceFolder}/onboard",
+                "C:/Users/Nick/AppData/Local/Arduino15/staging",
+                "C:/Users/Nick/OneDrive/Documents/Arduino/libraries"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "forcedInclude": [
+                "C:/Users/Nick/AppData/Local/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Arduino.h"
+            ],
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe"
+        }
+    ],
+    "version": 4
+}
